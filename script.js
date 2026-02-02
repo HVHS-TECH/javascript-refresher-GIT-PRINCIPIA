@@ -1,10 +1,12 @@
 
-//Create a dialog with the text from 'input_text'
-function RunAlert() {
+//Changes the title to 'input_text'. If 'input_text' is "", it sets the title to "..."
+function ChangeTitle() {
     var DOC_input = document.getElementById("input_text");
-    var text = "...";
-    text = DOC_input.value;
+    var text = "..."; //Empty title
+    if (DOC_input.value != "") text = DOC_input.value;
     console.log("RunAlert() :: RunAlert() has been called");
     console.log("RunAlert() :: text = " + text);
-    alert(text);
+    document.title = text;
+    DOC_input.value = ""; //Reset the text in 'DOC_input'
 }
+
