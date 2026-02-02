@@ -1,5 +1,5 @@
 //Sets 'OnLoad()' to run on window load
-window.addEventListener("onLoad", OnLoad)
+window.addEventListener("load", OnLoad);
 
 var DOC_input; //The input box for changing title and header
 var DOC_welcome_message; //The welcome message (header)
