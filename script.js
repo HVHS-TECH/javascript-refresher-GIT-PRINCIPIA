@@ -16,9 +16,9 @@ function ChangeTitle() {
 
     if (DOC_input.value != "") text = DOC_input.value;
 
-    //Logging
-    console.log("RunAlert() :: RunAlert() has been called");
-    console.log("RunAlert() :: text = " + text);
+    //Confirm function call
+    console.log("ChangeTitle() :: ChangeTitle() has been called");
+    console.log("ChangeTitle() :: text = " + text);
 
     //Set the title of the document to 'text'
     document.title = text;
