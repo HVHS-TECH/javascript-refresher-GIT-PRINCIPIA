@@ -7,6 +7,8 @@ function ChangeTitle() {
     console.log("RunAlert() :: RunAlert() has been called");
     console.log("RunAlert() :: text = " + text);
     document.title = text;
+    var welcome_message = document.getElementById("welcomeMessage");
+    welcome_message.innerText = "Welcome to the " + text + " page!";
     DOC_input.value = ""; //Reset the text in 'DOC_input'
 }
 
